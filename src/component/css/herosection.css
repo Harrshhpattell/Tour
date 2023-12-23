@@ -1,0 +1,121 @@
+/* ------------------herosection------------ */
+.hero {
+  font-size: 4rem;
+}
+
+.hero .head-sec {
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.hero .head-sec h2 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #1a3e45;
+}
+
+.hero .head-sec h2 span {
+  font-size: 5rem;
+  color: rgb(192, 39, 39);
+}
+
+.hero .head-sec h4 {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #0f2327;
+  margin: 2rem 0;
+  letter-spacing: 1rem;
+}
+
+.hero .head-sec button {
+  padding: 2rem 10rem;
+  background: linear-gradient(to bottom, #1a3e45, #2a5c62);
+  font-size: 2.5rem;
+  color: #ffffff;
+  border-radius: 2rem;
+}
+
+.filter-sec {
+  font-size: 4rem;
+  padding: 3rem 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-box {
+  text-align: center;
+  width: 50rem;
+  height: 10rem;
+  color: #1a3e45;
+  border: 1px solid #707272;
+}
+
+#time,
+#explore-btn {
+  font-size: 3rem;
+  width: 100%;
+  padding: 2rem;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.des {
+  border-radius: 2rem 0 0 2rem;
+}
+
+.expl {
+  border-radius: 0 2rem 2rem 0;
+}
+
+#explore-btn {
+  border-radius: 0 2rem 2rem 0;
+  background: linear-gradient(to bottom, #1a3e45, #2a5c62);
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+#explore-btn:hover {
+  background: linear-gradient(to bottom, #8edaee, #2a5c62);
+}
+
+@media (max-width: 1100px) {
+  .filter-sec {
+    font-size: 3rem;
+    padding: 3rem 15rem;
+  }
+  #time,
+  #explore-btn {
+    font-size: 2.5rem;
+  }
+  .filter-box {
+    width: 40rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .filter-sec {
+    font-size: 2.5rem;
+    padding: 2rem 10rem;
+  }
+  #time,
+  #explore-btn {
+    font-size: 1rem;
+  }
+  .filter-box {
+    width: 35rem;
+    height: 5rem;
+  }
+  .des {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .expl {
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  #explore-btn {
+    border-radius: 0 1rem 1rem 0;
+  }
+}
