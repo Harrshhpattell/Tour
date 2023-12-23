@@ -1,0 +1,39 @@
+.service {
+  background-color: #253329;
+  padding: 6rem;
+}
+
+.service h3 {
+  color: aliceblue;
+  font-size: 3rem;
+}
+
+.service h1 {
+  color: #2f656d;
+  font-size: 4rem;
+}
+
+.service h2 {
+  color: aliceblue;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.service p {
+  width: 50%;
+  margin: 2rem;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+@media (max-width: 1000px) {
+  .service p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .service {
+    padding: 3rem;
+  }
+}

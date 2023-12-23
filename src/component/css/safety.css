@@ -1,0 +1,33 @@
+.safety {
+  margin: 10rem 0;
+  text-align: center;
+}
+
+.safety h1 {
+  font-size: 3rem;
+  color: #1a3e45;
+}
+
+.safety p {
+  font-size: 1.5rem;
+  color: #b8b8bc;
+}
+
+.safety .safetyimages {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.safety .safetyimages .image img {
+  border-radius: 5rem;
+}
+
+@media (max-width: 500px) {
+  .safety .safetyimages .image img {
+    width: 80%;
+  }
+}

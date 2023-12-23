@@ -1,0 +1,106 @@
+.TopRatedHotel {
+  font-size: 3rem;
+  margin: 3rem;
+}
+
+.TopRatedHotel .head-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 3rem;
+  gap: 8rem;
+}
+
+.TopRatedHotel .head-section div {
+  width: 50%;
+}
+
+.TopRatedHotel .head-section div hr {
+  background-color: #1a3e45;
+  color: #1a3e45;
+  border: none;
+  height: 1rem;
+  margin: 1rem;
+}
+
+.TopRatedHotel .head-section div #hr1 {
+  width: 80%;
+}
+
+.TopRatedHotel .head-section div #hr2 {
+  width: 50%;
+}
+
+.TopRatedHotel .head-section div #hr3 {
+  width: 20%;
+}
+
+.TopRatedHotel .head-section div p {
+  font-size: 2rem;
+}
+/* -------------hotel cards----------- */
+
+.hotel {
+  margin: 5rem 3rem;
+}
+.hotel h1 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  color: #1a3e45;
+}
+
+.hotel .hotelliist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  overflow-x: scroll;
+}
+
+.hotel .hotelliist .list-hotel {
+  border-radius: 4rem;
+  position: relative;
+  font-size: 3rem;
+}
+
+.hotel .hotelliist .list-hotel img {
+  border-radius: 4rem;
+}
+
+.hotel .hotelliist .list-hotel .des {
+  font-weight: 600;
+  color: aliceblue;
+  width: 80%;
+  position: absolute;
+  bottom: 5rem;
+  left: 3rem;
+  font-size: 4rem;
+}
+
+.hotel .hotelliist .list-hotel .des .state {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hotelliist::-webkit-scrollbar-thumb {
+  background-color: #88a5b8;
+  border-radius: 6px;
+}
+
+.hotelliist::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.hotelliist::-webkit-scrollbar-thumb:hover {
+  background-color: #2073af;
+}
+
+.hotelliist::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 500px) {
+  .hotel .hotelliist .list-hotel img {
+    width: 20em;
+  }
+}

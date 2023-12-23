@@ -1,0 +1,72 @@
+/* ---------are u looking for ------------
+ */
+
+.Lookingfor {
+  margin: 3rem 0;
+}
+
+.Lookingfor h1 {
+  font-size: 3rem;
+  color: #1a3e45;
+  text-align: center;
+}
+
+.Lookingfor .lists {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem;
+  padding: 2rem;
+  overflow-x: scroll;
+}
+
+.Lookingfor .lists .list-item {
+  border: 1px solid #1a3e45;
+  border-radius: 3rem;
+  font-size: 3rem;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.lists::-webkit-scrollbar-thumb {
+  background-color: #88a5b8;
+  border-radius: 6px;
+}
+
+.lists::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.lists::-webkit-scrollbar-thumb:hover {
+  background-color: #2073af;
+}
+
+.lists::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+.Lookingfor .lists .list-item img {
+  border-radius: 3rem 3rem 0 0;
+}
+
+.Lookingfor .lists .list-item p {
+  text-align: center;
+  color: #f1f1f1;
+  background-color: #1a3e45;
+  padding: 1rem 0;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.Lookingfor .lists .list-item:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  .Lookingfor .lists .list-item {
+    width: 50rem;
+  }
+  .Lookingfor .lists .list-item img {
+    width: 10em;
+  }
+}
