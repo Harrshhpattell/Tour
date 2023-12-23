@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./css/herosection.css";
 
 export default function Herosection() {
@@ -9,7 +10,9 @@ export default function Herosection() {
           <span>Destination</span> as per your comfort!
         </h2>
         <h4>WITH CUSTOMIZED PACKAGES</h4>
-        <button>Best Adventure Place</button>
+        <Link to="/best_adventure_places_india">
+          <button>Best Adventure Place</button>
+        </Link>
       </div>
       <div className="filter-sec">
         <select className="filter-box des" id="destination" name="destination">

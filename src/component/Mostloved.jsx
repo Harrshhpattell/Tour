@@ -1,49 +1,11 @@
 import "./css/lookingfor.css";
+import PropTypes from "prop-types";
 
-const mostloved = [
-  {
-    image: "https://source.unsplash.com/400x250?gujarat",
-    name: "Gujarat",
-  },
-  {
-    image: "https://source.unsplash.com/400x250?goa",
-    name: "Goa",
-  },
-  {
-    image: "https://source.unsplash.com/400x250?delhi",
-    name: "Delhi",
-  },
-  {
-    image: "https://source.unsplash.com/400x250?rajasthan",
-    name: "Rajasthan",
-  },
-  {
-    image: "https://source.unsplash.com/400x250?maharashtra",
-    name: "Maharashtra",
-  },
-  {
-    image: "https://source.unsplash.com/400x250?karnataka",
-    name: "Karnataka",
-  },
-  {
-    image: "https://source.unsplash.com/400x250?tamilnadu",
-    name: "Tamil Nadu",
-  },
-  {
-    image: "https://source.unsplash.com/400x250?kerala",
-    name: "Kerala",
-  },
-  {
-    image: "https://source.unsplash.com/400x250?uttarpradesh",
-    name: "Uttar Pradesh",
-  },
-  {
-    image: "https://source.unsplash.com/400x250?bihar",
-    name: "Bihar",
-  },
-];
+Mostloved.propTypes = {
+  mostloved: PropTypes.array,
+};
 
-export default function Mostloved() {
+export default function Mostloved({ mostloved }) {
   return (
     <div className="Lookingfor">
       <h1>Most Loved Destination!</h1>

@@ -1,7 +1,18 @@
-function BestAdvePlaceIndia() {
+import AllState from "../component/AllState";
+import Navigation from "../component/Navigation";
+import Footer from "../component/Footer";
+import PropTypes from "prop-types";
+
+BestAdvePlaceIndia.propTypes = {
+  mostloved: PropTypes.array,
+};
+
+function BestAdvePlaceIndia({ mostloved }) {
   return (
     <div>
-      <h1>best place</h1>
+      <Navigation />
+      <AllState mostloved={mostloved} />
+      <Footer />
     </div>
   );
 }

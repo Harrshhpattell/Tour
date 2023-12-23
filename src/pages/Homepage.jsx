@@ -6,14 +6,19 @@ import Safety from "../component/Safety";
 import TopRatedHotel from "../component/TopRatedHotel";
 import Service from "../component/Service";
 import Footer from "../component/Footer";
+import PropTypes from "prop-types";
 
-function Homepage() {
+Homepage.propTypes = {
+  mostloved: PropTypes.array,
+};
+
+function Homepage({ mostloved }) {
   return (
     <div>
       <Navigation />
       <Herosection />
       <Lookingfor />
-      <Mostloved />
+      <Mostloved mostloved={mostloved} />
       <Safety />
       <TopRatedHotel />
       <Service />

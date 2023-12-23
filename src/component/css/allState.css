@@ -1,0 +1,205 @@
+.allState {
+  margin: 3rem;
+}
+
+.allState > h1 {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+  color: #1a3e45;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
+/* .filter-section {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.filter-section label,
+.filter-section select,
+.filter-section input {
+  display: block;
+  margin-bottom: 10px;
+} */
+
+/* ----------filter section------------ */
+
+.filter-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 3rem;
+  color: #1a3e45;
+  border: 1px solid #1a3e45;
+  padding: 2rem;
+  border-radius: 3rem;
+  height: 100vh;
+}
+
+.filter-section .filter-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-section .filter-heading h1 {
+  font-size: 3rem;
+}
+
+.filter-section .filter-heading button {
+  padding: 1rem;
+  color: aliceblue;
+  background-color: #1a3e45;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+.filter-section .filter-heading button:hover {
+  background-color: rgb(236, 76, 76);
+
+  border: none;
+}
+
+.filter-section .sortby,
+.filter-section .search,
+.filter-section .dayWiseFilter,
+.filter-section .destination,
+.filter-section .filterByPerPerson,
+.filter-section .filterByMonth {
+  font-size: 3rem;
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-section .search input[type="text"],
+.filter-section .dayWiseFilter select,
+.filter-section .filterByMonth select {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* ----------card section------------ */
+
+.state-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #1a3e45;
+  padding: 2rem;
+  border-radius: 3rem;
+  place-items: center;
+}
+
+.state-list .list {
+  border: 1px solid #1a3e45;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.state-list .list .rating-btn {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  font-size: 2rem;
+  background-color: #1a3e45;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem 0 0 1rem;
+  border: none;
+}
+
+.state-list .list img {
+  border-radius: 2rem 2rem 0 0;
+  width: 40em;
+}
+
+.state-list .list .des-sec {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.state-list .list .des-sec h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.state-list .list .des-sec .starting {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a3e45;
+  text-align: right;
+}
+
+.state-list .list .des-sec .price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a3e45;
+  text-align: right;
+}
+.state-list .list .des-sec .perPerson {
+  font-size: 1rem;
+  color: #000;
+  text-align: right;
+}
+
+.state-list .list .more-btn {
+  width: 100%;
+  border-radius: 0 0 2rem 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  background: linear-gradient(to bottom, #1a3e45, #2a5c62);
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .state-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .allState {
+    margin: 2rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    font-size: 3rem;
+  }
+  .state-list .list img {
+    width: 30em;
+  }
+  .filter-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+    height: auto;
+  }
+  .filter-section .filter-heading {
+    display: block;
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .state-list {
+    grid-template-columns: 1fr;
+  }
+  .state-list .list img {
+    width: 100%;
+  }
+}
