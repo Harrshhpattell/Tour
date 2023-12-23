@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Homepage from "./pages/Homepage";
 import BestAdvePlaceIndia from "./pages/BestAdvePlaceIndia";
+import { useState } from "react";
+import State from "./pages/State";
 
 const mostloved = [
   {
@@ -67,6 +69,9 @@ const mostloved = [
 ];
 
 function App() {
+  const [state, setState] = useState("");
+  console.log(state);
+
   return (
     <BrowserRouter>
       <Routes>
@@ -74,9 +79,11 @@ function App() {
         <Route
           path="/best_adventure_places_india"
           element={<BestAdvePlaceIndia mostloved={mostloved} />}
-        >
-          {/* <Route path="" element={<City />} /> */}
-        </Route>
+        />
+        <Route
+          path="/best_adventure_places_india/:state"
+          element={<State setState={setState} />}
+        />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

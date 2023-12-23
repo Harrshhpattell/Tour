@@ -1,5 +1,6 @@
 import "./css/allState.css";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 AllState.propTypes = {
   mostloved: PropTypes.array,
@@ -39,11 +40,7 @@ export default function AllState({ mostloved }) {
               <input type="radio" id="india" name="destination" /> India
             </label>
             <label htmlFor="internantional">
-              <input
-                type="radio"
-                id="internantional"
-                name="budgdestinationet"
-              />{" "}
+              <input type="radio" id="internantional" name="destination" />{" "}
               Internantional
             </label>
           </div>
@@ -94,7 +91,10 @@ export default function AllState({ mostloved }) {
                   <p className="perPerson">Per Person</p>
                 </div>
               </div>
-              <button className="more-btn">More Detail</button>
+
+              <Link to={list.name.toLowerCase()}>
+                <button className="more-btn">More Detail</button>
+              </Link>
             </div>
           ))}
         </div>

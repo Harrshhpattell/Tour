@@ -1,12 +1,14 @@
 import "./css/navigation.css";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
     <nav className="nav">
-      <div className="logo">
+      <Link to="/" className="logo">
         <img src="../images/icons/airplane-around-earth.png" alt="logo" />
         <h1>Start Your Tour</h1>
-      </div>
+      </Link>
+
       <div className="info">
         <ul>
           <li>
