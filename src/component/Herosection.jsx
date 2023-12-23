@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import "./css/herosection.css";
+import { useState } from "react";
 
 export default function Herosection() {
+  const [destination, setDestination] = useState("");
+  console.log(destination);
+
   return (
     <div className="hero">
       <div className="head-sec">
@@ -15,9 +19,19 @@ export default function Herosection() {
         </Link>
       </div>
       <div className="filter-sec">
-        <select className="filter-box des" id="destination" name="destination">
+        <select
+          className="filter-box des"
+          id="destination"
+          name="destination"
+          value={destination}
+          onChange={(e) => setDestination(e.target.value)}
+        >
           <option value="">Select Destination</option>
           <option value="delhi">Delhi</option>
+          <option value="gujarat">Gujarat</option>
+          <option value="rajasthan">Rajasthan</option>
+          <option value="maharashtra">Maharashtra</option>
+          <option value="kerala">Kerala</option>
         </select>
         <div className="filter-box">
           <input type="time" id="time" name="time" />
@@ -28,7 +42,9 @@ export default function Herosection() {
           <option value="feb">feb</option>
         </select>
         <div className="filter-box expl">
-          <button id="explore-btn">Explore</button>
+          <Link to={`/best_adventure_places_india/${destination}`}>
+            <button id="explore-btn">Explore</button>
+          </Link>
         </div>
       </div>
     </div>

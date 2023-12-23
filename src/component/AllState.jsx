@@ -87,7 +87,7 @@ export default function AllState({ mostloved }) {
                 <h1>{list.name}</h1>
                 <div>
                   <p className="starting">Starting From</p>
-                  <p className="price">₹ {list.price}</p>
+                  <p className="price">₹ {list.startingPrice}</p>
                   <p className="perPerson">Per Person</p>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import "./css/lookingfor.css";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 Mostloved.propTypes = {
   mostloved: PropTypes.array,
@@ -12,8 +13,10 @@ export default function Mostloved({ mostloved }) {
       <div className="lists">
         {mostloved.map((item, index) => (
           <div key={index} className="list-item">
-            <img src={item.image} alt={item.name} />
-            <p>{item.name}</p>
+            <Link to={`/best_adventure_places_india/${item.name}`}>
+              <img src={item.image} alt={item.name} />
+              <p>{item.name}</p>
+            </Link>
           </div>
         ))}
       </div>
