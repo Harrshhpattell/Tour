@@ -618,17 +618,17 @@ function App() {
     <BrowserRouter>
       <ScrollTop />
       <Routes>
-        <Route path="/" element={<Homepage mostloved={mostloved} />} />
+        <Route path="/Tour" element={<Homepage mostloved={mostloved} />} />
         <Route
           path="/best_adventure_places_india"
           element={<BestAdvePlaceIndia mostloved={mostloved} />}
         />
         <Route
-          path="/best_adventure_places_india/:state"
+          path="/Tour/best_adventure_places_india/:state"
           element={<State mostloved={mostloved} />}
         />
         <Route
-          path="/best_adventure_places_india/:state/:package"
+          path="/Tour/best_adventure_places_india/:state/:package"
           element={<Details mostloved={mostloved} />}
         />
 
