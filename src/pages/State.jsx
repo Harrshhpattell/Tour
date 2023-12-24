@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Navigation from "../component/Navigation";
 import StatePage from "../component/StatePage";
+import Footer from "../component/Footer";
 import PropTypes from "prop-types";
 
 State.propTypes = {
@@ -13,6 +14,7 @@ function State({ mostloved }) {
     <div>
       <Navigation />
       <StatePage state={state} mostloved={mostloved} />
+      <Footer />
     </div>
   );
 }

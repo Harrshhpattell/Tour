@@ -68,7 +68,33 @@ export default function TopRatedHotel() {
               <div className="des">
                 <div className="state">
                   <h3>{list.state}</h3>
-                  <span>XXXXX</span>
+                  <span>
+                    <img
+                      src="../images/icons/star1.png"
+                      alt="star"
+                      style={{ width: "2rem" }}
+                    />
+                    <img
+                      src="../images/icons/star1.png"
+                      alt="star"
+                      style={{ width: "2rem" }}
+                    />
+                    <img
+                      src="../images/icons/star1.png"
+                      alt="star"
+                      style={{ width: "2rem" }}
+                    />
+                    <img
+                      src="../images/icons/star1.png"
+                      alt="star"
+                      style={{ width: "2rem" }}
+                    />
+                    <img
+                      src="../images/icons/star1.png"
+                      alt="star"
+                      style={{ width: "2rem" }}
+                    />
+                  </span>
                 </div>
                 <p>{list.name}</p>
               </div>

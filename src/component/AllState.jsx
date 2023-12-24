@@ -10,7 +10,7 @@ export default function AllState({ mostloved }) {
   return (
     <div className="allState">
       <h1>Best Adventure Place (India)</h1>
-      <div className="container">
+      <div className="container-allState">
         <div className="filter-section">
           <div className="filter-heading">
             <h1>Filter</h1>

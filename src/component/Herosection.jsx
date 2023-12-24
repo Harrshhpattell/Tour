@@ -29,11 +29,11 @@ export default function Herosection({ mostloved }) {
           id="destination"
           name="destination"
           value={destination}
-          onChange={(e) => setDestination(e.target.value)}
+          onChange={(e) => setDestination(e.target.value.toLowerCase())}
         >
           <option value="">Select Destination</option>
           {mostloved.map((list, index) => (
-            <option value={list.name} key={index}>
+            <option value={list.name.toLowerCase()} key={index}>
               {list.name}
             </option>
           ))}

@@ -90,3 +90,220 @@
     padding: 0;
   }
 }
+
+/* ---------------package--------------- */
+.statePage {
+  margin: 3rem;
+}
+
+.statePage > h1 {
+  font-size: 5rem;
+  margin: 10rem 0 5rem 0;
+  color: #1a3e45;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
+/* ----------filter section------------ */
+
+.statePage .filter-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 3rem;
+  color: #1a3e45;
+  border: 1px solid #1a3e45;
+  padding: 2rem;
+  border-radius: 3rem;
+  height: 100vh;
+}
+
+.statePage .filter-section .filter-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statePage .filter-section .filter-heading h1 {
+  font-size: 3rem;
+}
+
+.statePage .filter-section .filter-heading button {
+  padding: 1rem;
+  color: aliceblue;
+  background-color: #1a3e45;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+.statePage .filter-section .filter-heading button:hover {
+  background-color: rgb(236, 76, 76);
+
+  border: none;
+}
+
+.statePage .filter-section .sortby,
+.statePage .filter-section .search,
+.statePage .filter-section .dayWiseFilter,
+.statePage .filter-section .destination,
+.statePage .filter-section .filterByPerPerson,
+.statePage .filter-section .filterByMonth {
+  font-size: 3rem;
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.statePage .filter-section .search input[type="text"],
+.statePage .filter-section .dayWiseFilter select,
+.statePage .filter-section .filterByMonth select {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* ----------card section------------ */
+
+.statePage .state-list {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 39rem));
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #1a3e45;
+  padding: 2rem;
+  border-radius: 3rem;
+  justify-content: center;
+}
+
+.statePage .state-list .list {
+  border: 1px solid #1a3e45;
+  position: relative;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.statePage .state-list .list .rating-btn {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  font-size: 2rem;
+  background-color: #1a3e45;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem 0 0 1rem;
+  border: none;
+}
+
+.statePage .state-list .list img {
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+}
+
+.statePage .state-list .list .des-sec {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  height: 10rem;
+  justify-content: space-between;
+}
+
+.statePage .state-list .list .des-sec h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #0f2327;
+  flex-basis: 60%;
+}
+
+.statePage .state-list .list .des-sec .price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a3e45;
+  text-align: right;
+  flex-basis: 40%;
+}
+.statePage .state-list .list .des-sec .perPerson {
+  font-size: 1rem;
+  color: #000;
+  text-align: right;
+}
+
+.statePage .state-list .list .include {
+  font-size: 3rem;
+  padding: 1rem;
+  color: #464646;
+}
+
+.statePage .state-list .list .include .includeList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 3rem;
+  gap: 1rem;
+}
+
+.statePage .state-list .list .include .includeList .includeItem {
+  text-align: center;
+  margin: 1rem;
+}
+
+.statePage .state-list .list .more-btn {
+  width: 90%;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 2rem 0;
+  font-size: 2rem;
+  background: linear-gradient(to bottom, #1a3e45, #2a5c62);
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 1300px) {
+  .statePage .state-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .statePage .statePage {
+    margin: 2rem;
+  }
+  .statePage .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    font-size: 3rem;
+  }
+  .statePage .state-list .list img {
+    width: 30em;
+  }
+  .statePage .filter-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+    height: auto;
+  }
+  .statePage .filter-section .filter-heading {
+    display: block;
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .statePage .state-list {
+    grid-template-columns: 1fr;
+  }
+  .statePage .state-list .list img {
+    width: 100%;
+  }
+}
