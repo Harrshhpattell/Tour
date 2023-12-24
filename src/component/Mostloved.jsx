@@ -22,6 +22,11 @@ export default function Mostloved({ mostloved }) {
           </Link>
         ))}
       </div>
+      <div className="btn-viewMore">
+        <Link to="best_adventure_places_india">
+          <button>All state</button>
+        </Link>
+      </div>
     </div>
   );
 }

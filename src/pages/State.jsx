@@ -12,7 +12,7 @@ function State({ mostloved }) {
   const { state } = useParams();
   return (
     <div>
-      <Navigation />
+      <Navigation pathURL={"../../images"} />
       <StatePage state={state} mostloved={mostloved} />
       <Footer />
     </div>

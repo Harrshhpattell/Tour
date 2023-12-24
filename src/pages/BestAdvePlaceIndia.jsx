@@ -10,7 +10,7 @@ BestAdvePlaceIndia.propTypes = {
 function BestAdvePlaceIndia({ mostloved }) {
   return (
     <div>
-      <Navigation />
+      <Navigation pathURL={"../images"} />
       <AllState mostloved={mostloved} />
       <Footer />
     </div>

@@ -12,7 +12,7 @@ function Details({ mostloved }) {
   const { state, package: packageName } = useParams();
   return (
     <div>
-      <Navigation />
+      <Navigation pathURL={"../../../images"} />
       <PackageDetail
         state={state}
         packageName={packageName}

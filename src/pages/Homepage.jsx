@@ -15,7 +15,7 @@ Homepage.propTypes = {
 function Homepage({ mostloved }) {
   return (
     <div>
-      <Navigation />
+      <Navigation pathURL={"./images"} />
       <Herosection mostloved={mostloved} />
       <Lookingfor />
       <Mostloved mostloved={mostloved} />

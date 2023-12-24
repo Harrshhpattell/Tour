@@ -71,3 +71,17 @@
     width: 10em;
   }
 }
+
+.btn-viewMore {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-viewMore button {
+  padding: 1rem 3rem;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, #1a3e45, #2a5c62);
+  color: #f1f1f1;
+  border: none;
+  border-radius: 1rem;
+}
