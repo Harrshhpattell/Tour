@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navigation() {
   return (
     <nav className="nav">
-      <Link to="/" className="logo">
+      <Link to="/Tour" className="logo">
         <img src="/images/icons/airplane-around-earth.png" alt="logo" />
         <h1>Start Your Tour</h1>
       </Link>

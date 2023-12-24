@@ -620,7 +620,7 @@ function App() {
       <Routes>
         <Route path="/Tour" element={<Homepage mostloved={mostloved} />} />
         <Route
-          path="/best_adventure_places_india"
+          path="/Tour/best_adventure_places_india"
           element={<BestAdvePlaceIndia mostloved={mostloved} />}
         />
         <Route

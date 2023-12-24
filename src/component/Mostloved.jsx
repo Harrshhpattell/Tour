@@ -13,7 +13,7 @@ export default function Mostloved({ mostloved }) {
       <div className="lists">
         {mostloved.map((item, index) => (
           <Link
-            to={`/best_adventure_places_india/${item.name.toLowerCase()}`}
+            to={`/Tour/best_adventure_places_india/${item.name.toLowerCase()}`}
             key={index}
             className="list-item"
           >
