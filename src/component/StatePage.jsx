@@ -140,32 +140,32 @@ export default function StatePage({ state, mostloved }) {
                         <div className="includeList" key={index}>
                           <div className="includeItem">
                             <img
-                              src="../images/icons/star.png"
-                              style={{ width: "1.5rem" }}
+                              src="../images/icons/hotel.png"
+                              style={{ width: "4rem" }}
                               alt={list.name}
                             />
                             <h3>{include.hotel}</h3>
                           </div>
                           <div className="includeItem">
                             <img
-                              src="../images/icons/star.png"
-                              style={{ width: "1.5rem" }}
+                              src="../images/icons/food.png"
+                              style={{ width: "4rem" }}
                               alt={list.name}
                             />
                             <h3>{include.meals}</h3>
                           </div>
                           <div className="includeItem">
                             <img
-                              src="../images/icons/star.png"
-                              style={{ width: "1.5rem" }}
+                              src="../images/icons/sightseeing.png"
+                              style={{ width: "4rem" }}
                               alt={list.name}
                             />
                             <h3>{include.sightseeing}</h3>
                           </div>
                           <div className="includeItem">
                             <img
-                              src="../images/icons/star.png"
-                              style={{ width: "1.5rem" }}
+                              src="../images/icons/public-transport.png"
+                              style={{ width: "4rem" }}
                               alt={list.name}
                             />
                             <h3>{include.transport}</h3>
