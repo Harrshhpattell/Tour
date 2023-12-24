@@ -22,3 +22,71 @@
   transform: translate(-50%, -50%);
   text-transform: capitalize;
 }
+
+/* --------two button-------- */
+.two-btn {
+  margin: 4rem;
+  font-size: 3rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.two-btn button {
+  width: 48%;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: #0f2327;
+  border-radius: 2rem;
+  border: 1px solid #bdbfbf;
+  background: linear-gradient(to bottom, #ffffff, #bdbfbf);
+}
+
+.two-btn button span {
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: #1a3e45;
+}
+
+/* -------places------------- */
+.places {
+  margin: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 4rem;
+  border: 1px solid #bdbfbf;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+}
+
+.places .place {
+  width: 50rem;
+}
+
+.places .place img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.places .place h1 {
+  font-size: 3rem;
+  color: #1a3e45;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .two-btn {
+    flex-direction: column;
+  }
+  .two-btn button {
+    width: 100%;
+  }
+  .places {
+    border: none;
+    padding: 0;
+  }
+}

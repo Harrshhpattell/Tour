@@ -26,15 +26,18 @@ const mostloved = [
     places: [
       {
         name: "Fatehpuri Masjid",
+        image: "https://source.unsplash.com/400x250?Fatehpuri",
         description: "A historical mosque in Delhi.",
       },
       {
         name: "Qutub Minar",
+        image: "https://source.unsplash.com/400x250?QutubMinar",
         description:
           "A UNESCO World Heritage Site and one of the tallest minarets in India.",
       },
       {
         name: "Raj Ghat",
+        image: "https://source.unsplash.com/400x250?RajGhat",
         description: "A memorial dedicated to Mahatma Gandhi.",
       },
     ],
@@ -152,7 +155,7 @@ function App() {
         />
         <Route
           path="/best_adventure_places_india/:state"
-          element={<State setState={setState} />}
+          element={<State setState={setState} mostloved={mostloved} />}
         />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

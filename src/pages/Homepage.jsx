@@ -16,7 +16,7 @@ function Homepage({ mostloved }) {
   return (
     <div>
       <Navigation />
-      <Herosection />
+      <Herosection mostloved={mostloved} />
       <Lookingfor />
       <Mostloved mostloved={mostloved} />
       <Safety />

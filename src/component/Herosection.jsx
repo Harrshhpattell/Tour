@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import "./css/herosection.css";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-export default function Herosection() {
+Herosection.propTypes = {
+  mostloved: PropTypes.array,
+};
+
+export default function Herosection({ mostloved }) {
   const [destination, setDestination] = useState("");
   console.log(destination);
 
@@ -27,11 +32,11 @@ export default function Herosection() {
           onChange={(e) => setDestination(e.target.value)}
         >
           <option value="">Select Destination</option>
-          <option value="delhi">Delhi</option>
-          <option value="gujarat">Gujarat</option>
-          <option value="rajasthan">Rajasthan</option>
-          <option value="maharashtra">Maharashtra</option>
-          <option value="kerala">Kerala</option>
+          {mostloved.map((list, index) => (
+            <option value={list.name} key={index}>
+              {list.name}
+            </option>
+          ))}
         </select>
         <div className="filter-box">
           <input type="time" id="time" name="time" />

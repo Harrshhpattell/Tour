@@ -6,7 +6,7 @@
 .TopRatedHotel .head-section {
   display: flex;
   justify-content: space-between;
-  margin: 5rem 3rem;
+  margin: 5rem 0rem;
   gap: 8rem;
 }
 
@@ -40,7 +40,7 @@
 /* -------------hotel cards----------- */
 
 .hotel {
-  margin: 5rem 3rem;
+  margin: 5rem 0rem;
 }
 .hotel h1 {
   font-size: 3rem;
@@ -64,6 +64,7 @@
 
 .hotel .hotelliist .list-hotel img {
   border-radius: 4rem;
+  filter: brightness(0.5);
 }
 
 .hotel .hotelliist .list-hotel .des {

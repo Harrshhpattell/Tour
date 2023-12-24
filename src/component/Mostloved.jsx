@@ -12,12 +12,14 @@ export default function Mostloved({ mostloved }) {
       <h1>Most Loved Destination!</h1>
       <div className="lists">
         {mostloved.map((item, index) => (
-          <div key={index} className="list-item">
-            <Link to={`/best_adventure_places_india/${item.name}`}>
-              <img src={item.image} alt={item.name} />
-              <p>{item.name}</p>
-            </Link>
-          </div>
+          <Link
+            to={`/best_adventure_places_india/${item.name}`}
+            key={index}
+            className="list-item"
+          >
+            <img src={item.image} alt={item.name} />
+            <p>{item.name}</p>
+          </Link>
         ))}
       </div>
     </div>
